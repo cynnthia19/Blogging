@@ -5,7 +5,7 @@ body{
 
 /*index*/
 .banner{
-   background: url(../img/technology.jpg) no-repeat center center/cover;
+   background: url(https://cdn.pixabay.com/photo/2022/04/04/16/23/technology-7111752_960_720.jpg) no-repeat center center/cover;
    height: 84.5vh;
    display: flex;
     align-items: center;
@@ -197,7 +197,7 @@ body{
 
 /*kategori*/
 .banner2 {
-    background-image: url('../img/img.png'); 
+    background-image: url('https://www.corporatecomplianceinsights.com/wp-content/uploads/2021/12/shutterstock_1262488831-1140x815.jpg'); 
     background-size: cover;
     background-position: center;
     width: 100%;
