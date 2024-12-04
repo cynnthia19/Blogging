@@ -5,7 +5,7 @@ body{
 
 /*index*/
 .banner{
-   background: url(/img/technology.jpg) no-repeat center center/cover;
+   background: url(img/technology.jpg) no-repeat center center/cover;
    height: 84.5vh;
    display: flex;
     align-items: center;
@@ -197,7 +197,7 @@ body{
 
 /*kategori*/
 .banner2 {
-    background-image: url('/img/img.png'); 
+    background-image: url('img/img.png'); 
     background-size: cover;
     background-position: center;
     width: 100%;
