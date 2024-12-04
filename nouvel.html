@@ -25,7 +25,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link fw-bold" href="#">Akèy</a>
@@ -37,7 +37,7 @@
                         </a>
                         <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
                             <li><a class="dropdown-item" href="nouvel.html">Nouvèl Teknolojik</a></li>
-                            <li><a class="dropdown-item" href="#">Sekirite Teknoloji</a></li>
+                            <li><a class="dropdown-item" href="sekirite.html">Sekirite Teknoloji</a></li>
                             <li><a class="dropdown-item" href="#">Revi Tech</a></li>
                             <li><a class="dropdown-item" href="#">Ekonomi Dijital</a></li>
                         </ul>
@@ -48,24 +48,107 @@
                     <li class="nav-item">
                         <a class="nav-link  fw-bold" href="kontakte.html">Kontakte</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Konekte</button>
+
+                    </li>
                 </ul>
             </div>
-            <div class="btn-navbar justify-content-end">
-                <button class="btn btn-primary"> Konekte</button>
-                <button class="btn btn-outline-primary">enskri</button>
-            </div>
+
         </div>
     </nav>
+
+    <!--modal-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Konekte</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulaire de connexion -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Imèl ou</label>
+                            <input type="email" class="form-control" id="email" placeholder="Antre imèl ou">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Modpas ou</label>
+                            <input type="password" class="form-control" id="password" placeholder="Antre modpas ou">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Konekte</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="m-0">Ou pa gen kont?
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">
+                            Enskri
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Enskri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">Non</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="Antre non ou">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastname" class="form-label">Prenon</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Antre prenon ou">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signup-email" class="form-label">Imèl</label>
+                            <input type="email" class="form-control" id="signup-email" placeholder="Antre imèl ou">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signup-password" class="form-label">Modpas</label>
+                            <input type="password" class="form-control" id="signup-password"
+                                placeholder="Antre modpas ou">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Enskri</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="m-0">Ou deja gen yon kont?
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+                            Konekte
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <section class="banner2">
         <div class="container text-center">
             <h3 class="display-4 fw-bold text-white">Nouvel Teknoloji</h3>
             <p class="lead text-white mb-4">
-                Paj sa a fèt pou kenbe w enfòme epi mete w ajou sou tout sa k ap pase nan teknoloji, kit ou se yon pwofesyonèl, yon etidyan, oswa yon fanatik teknoloji. Ou pral jwenn dènye nouvèl sou mond teknoloji a. Nou pataje enfòmasyon sou inovasyon, lansman nouvo pwodwi, devlopman lojisyèl ak aparèy, ansanm ak gwo chanjman nan sektè teknoloji a.
+                Paj sa a fèt pou kenbe w enfòme epi mete w ajou sou tout sa k ap pase nan teknoloji, kit ou se yon
+                pwofesyonèl, yon etidyan, oswa yon fanatik teknoloji. Ou pral jwenn dènye nouvèl sou mond teknoloji a.
+                Nou pataje enfòmasyon sou inovasyon, lansman nouvo pwodwi, devlopman lojisyèl ak aparèy, ansanm ak gwo
+                chanjman nan sektè teknoloji a.
             </p>
             <nav aria-label="Kout chemen" class="py-3">
                 <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Sekirite Teknoloji</a></li>
+                    <li class="breadcrumb-item"><a href="sekirite.html">Sekirite Teknoloji</a></li>
                     <li class="breadcrumb-item"><a href="#">Revi Tek</a></li>
                     <li class="breadcrumb-item"><a href="#">Ekonomi dijital</a></li>
                 </ol>
@@ -74,156 +157,258 @@
     </section>
 
     <!-- Card Section -->
-<section class="kat">
-    <div class="container py-5">
-        <div class="row justify-content-between">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-sm-12">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal1">
-                    <div class="card shadow-lg rounded">
-                        <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne</h5>
-                            <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè.</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="IDModal1" tabindex="-1" aria-labelledby="IDModal1Label" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header bg-primary text-white">
-                                <h5 class="modal-title" id="IDModal1Label">Pirataj Done SFR yo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <!-- Modal Body -->
-                            <div class="modal-body">
-                                <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done pèsonèl.</p>
-                            </div>
-                            <!-- Modal Footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fèmen</button>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/" style="text-decoration: none; color: white;">Li plis</a>
-                                </button>
+    <section class="kat">
+        <div class="container py-5">
+            <div class="row justify-content-between">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-sm-12">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal1">
+                        <div class="card shadow-lg rounded">
+                            <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne
+                                </h5>
+                                <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè
+                                    pa yon gwoup hackè.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-6 col-sm-12">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal2">
-                    <div class="card shadow-lg rounded">
-                        <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne</h5>
-                            <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè.</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="IDModal2" tabindex="-1" aria-labelledby="IDModal2Label" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header bg-primary text-white">
-                                <h5 class="modal-title" id="IDModal2Label">Pirataj Done SFR yo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <!-- Modal Body -->
-                            <div class="modal-body">
-                                <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done pèsonèl.</p>
-                            </div>
-                            <!-- Modal Footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fèmen</button>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/" style="text-decoration: none; color: white;">Li plis</a>
-                                </button>
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="IDModal1" tabindex="-1" aria-labelledby="IDModal1Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title" id="IDModal1Label">Pirataj Done SFR yo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup
+                                        hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou
+                                        mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite
+                                        ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done
+                                        pèsonèl.</p>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fèmen</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/"
+                                            style="text-decoration: none; color: white;">Li plis</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-md-6 col-sm-12">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal3">
-                    <div class="card shadow-lg rounded">
-                        <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne</h5>
-                            <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè.</p>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-sm-12">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal2">
+                        <div class="card shadow-lg rounded">
+                            <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne
+                                </h5>
+                                <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè
+                                    pa yon gwoup hackè.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="IDModal3" tabindex="-1" aria-labelledby="IDModal3Label" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header bg-primary text-white">
-                                <h5 class="modal-title" id="IDModal3Label">Pirataj Done SFR yo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <!-- Modal Body -->
-                            <div class="modal-body">
-                                <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done pèsonèl.</p>
-                            </div>
-                            <!-- Modal Footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fèmen</button>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/" style="text-decoration: none; color: white;">Li plis</a>
-                                </button>
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="IDModal2" tabindex="-1" aria-labelledby="IDModal2Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title" id="IDModal2Label">Pirataj Done SFR yo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup
+                                        hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou
+                                        mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite
+                                        ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done
+                                        pèsonèl.</p>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fèmen</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/"
+                                            style="text-decoration: none; color: white;">Li plis</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="col-md-6 col-sm-12">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal2">
-                    <div class="card shadow-lg rounded">
-                        <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne</h5>
-                            <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè.</p>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-sm-12">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal3">
+                        <div class="card shadow-lg rounded">
+                            <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne
+                                </h5>
+                                <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè
+                                    pa yon gwoup hackè.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="IDModal2" tabindex="-1" aria-labelledby="IDModal2Label" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header bg-primary text-white">
-                                <h5 class="modal-title" id="IDModal2Label">Pirataj Done SFR yo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <!-- Modal Body -->
-                            <div class="modal-body">
-                                <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done pèsonèl.</p>
-                            </div>
-                            <!-- Modal Footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fèmen</button>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/" style="text-decoration: none; color: white;">Li plis</a>
-                                </button>
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="IDModal3" tabindex="-1" aria-labelledby="IDModal3Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title" id="IDModal3Label">Pirataj Done SFR yo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup
+                                        hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou
+                                        mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite
+                                        ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done
+                                        pèsonèl.</p>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fèmen</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/"
+                                            style="text-decoration: none; color: white;">Li plis</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- Card 2 -->
+                <div class="col-md-6 col-sm-12">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#IDModal2">
+                        <div class="card shadow-lg rounded">
+                            <img src="/img/ai-generated-8630602_1280.png" class="card-img-top" alt="Image">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Pirataj Done SFR yo: Yon Menas pou 3.6 Milyon Abòne
+                                </h5>
+                                <p class="card-text">Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè
+                                    pa yon gwoup hackè.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="IDModal2" tabindex="-1" aria-labelledby="IDModal2Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title" id="IDModal2Label">Pirataj Done SFR yo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>Atak sou SFR te ekspoze done pèsonèl 3.6 milyon kliyan ki te vòlè pa yon gwoup
+                                        hackè. Done yo, ki enkli non, adrès, ak enfòmasyon finansye, te fèk mete sou
+                                        mache a. Menm si SFR poko konfime atak la, ekspè yo avèti sou danje vòl idantite
+                                        ak fwod. Ensidan sa a mete an evidans bezwen pou plis sekirite nan jere done
+                                        pèsonèl.</p>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fèmen</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://www.futura-sciences.com/tech/actualites/technologie-piratage-massif-chez-sfr-ce-groupe-hackers-affirme-detenir-donnees-36-millions-clients-117898/"
+                                            style="text-decoration: none; color: white;">Li plis</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <!-- Menu -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="text-primary">Menu</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Akey</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kategori</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">A pwopo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kontakte</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kategori -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="text-primary">Kategori</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Nouvel
+                                teknolojik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sekirite
+                                teknolojik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Revi Tek</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ekonomi
+                                Dijital</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Form & Kontakte -->
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5 class="text-primary">Abòne pou bilten nou an</h5>
+                        <p>Resi mensyèl sou sa ki nouvo ak enteresan nan teknoloji.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Adrès imèl" required>
+                            <button class="btn btn-primary" type="submit">Abòne</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-4">
+                        <h4 class="text-primary">Kontakte nou</h4>
+                        <a href="mailto:dijitek@gmail.com" class="text-body-secondary">dijitek@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p class="text-body-secondary">Copyright &copy; 2024. Tout dwa rezève.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/facebook.png" alt="Facebook"
+                                width="24" height="24"></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/instagram.png"
+                                alt="Instagram" width="24" height="24"></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/twitter.png" alt="Twitter"
+                                width="24" height="24"></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-</section>
 
     <!--Lien javascript boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -15,123 +15,127 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container ">
-            <a class="navbar-brand" href="index.html">
-                <img src="./img/Digitek.png" alt="DigiTek">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#">Akèy</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="dropdownMenuButton" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Kategori
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="nouvel.html">Nouvèl Teknolojik</a></li>
-                            <li><a class="dropdown-item" href="sekirite.html">Sekirite Teknoloji</a></li>
-                            <li><a class="dropdown-item" href="#">Revi Tech</a></li>
-                            <li><a class="dropdown-item" href="#">Ekonomi Dijital</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  fw-bold" href="apwopo.html">A pwopo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  fw-bold" href="kontakte.html">Kontakte</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="btn-navbar justify-content-end">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" > Konekte</button>
-            </div>
-        </div>
-    </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container ">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img/Digitek.png" alt="DigiTek">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Akèy</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold" href="#" id="dropdownMenuButton" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Kategori
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="nouvel.html">Nouvèl Teknolojik</a></li>
+                        <li><a class="dropdown-item" href="sekirite.html">Sekirite Teknoloji</a></li>
+                        <li><a class="dropdown-item" href="#">Revi Tech</a></li>
+                        <li><a class="dropdown-item" href="#">Ekonomi Dijital</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  fw-bold" href="apwopo.html">A pwopo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  fw-bold" href="kontakte.html">Kontakte</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Konekte</button>
 
-    <!--modal-->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Konekte</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Formulaire de connexion -->
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Imèl ou</label>
-                            <input type="email" class="form-control" id="email" placeholder="Antre imèl ou">
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Modpas ou</label>
-                            <input type="password" class="form-control" id="password" placeholder="Antre modpas ou">
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Konekte</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p class="m-0">Ou pa gen kont? 
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">
-                            Enskri
-                        </a>
-                    </p>
-                </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!--modal-->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Konekte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulaire de connexion -->
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Imèl ou</label>
+                        <input type="email" class="form-control" id="email" placeholder="Antre imèl ou">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Modpas ou</label>
+                        <input type="password" class="form-control" id="password" placeholder="Antre modpas ou">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Konekte</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p class="m-0">Ou pa gen kont?
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">
+                        Enskri
+                    </a>
+                </p>
             </div>
         </div>
     </div>
-    
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Enskri</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="firstname" class="form-label">Non</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="Antre non ou">
-                        </div>
-                        <div class="mb-3">
-                            <label for="lastname" class="form-label">Prenon</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="Antre prenon ou">
-                        </div>
-                        <div class="mb-3">
-                            <label for="signup-email" class="form-label">Imèl</label>
-                            <input type="email" class="form-control" id="signup-email" placeholder="Antre imèl ou">
-                        </div>
-                        <div class="mb-3">
-                            <label for="signup-password" class="form-label">Modpas</label>
-                            <input type="password" class="form-control" id="signup-password" placeholder="Antre modpas ou">
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Enskri</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p class="m-0">Ou deja gen yon kont? 
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
-                            Konekte
-                        </a>
-                    </p>
-                </div>
-                
+</div>
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Enskri</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label">Non</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Antre non ou">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastname" class="form-label">Prenon</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Antre prenon ou">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signup-email" class="form-label">Imèl</label>
+                        <input type="email" class="form-control" id="signup-email" placeholder="Antre imèl ou">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signup-password" class="form-label">Modpas</label>
+                        <input type="password" class="form-control" id="signup-password"
+                            placeholder="Antre modpas ou">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Enskri</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p class="m-0">Ou deja gen yon kont?
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+                        Konekte
+                    </a>
+                </p>
+            </div>
+
         </div>
     </div>
+</div>
 
     <section class="banner2">
         <div class="container text-center">
@@ -187,18 +191,71 @@
                     </div>
                 </div>
             </div>
-
-            
-
-            
-
-            
-
-            
-
-        </div>
+       </div>
     </div>
 </section>
+
+<div class="container">
+    <footer class="py-5">
+        <div class="row">
+            <!-- Menu -->
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="text-primary">Menu</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Akey</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kategori</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">A pwopo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kontakte</a></li>
+                </ul>
+            </div>
+
+            <!-- Kategori -->
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="text-primary">Kategori</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Nouvel
+                            teknolojik</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sekirite
+                            teknolojik</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Revi Tek</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ekonomi
+                            Dijital</a></li>
+                </ul>
+            </div>
+
+            <!-- Subscribe Form & Kontakte -->
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5 class="text-primary">Abòne pou bilten nou an</h5>
+                    <p>Resi mensyèl sou sa ki nouvo ak enteresan nan teknoloji.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Adrès imèl" required>
+                        <button class="btn btn-primary" type="submit">Abòne</button>
+                    </div>
+                </form>
+
+                <div class="mt-4">
+                    <h4 class="text-primary">Kontakte nou</h4>
+                    <a href="mailto:dijitek@gmail.com" class="text-body-secondary">dijitek@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p class="text-body-secondary">Copyright &copy; 2024. Tout dwa rezève.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/facebook.png" alt="Facebook"
+                            width="24" height="24"></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/instagram.png"
+                            alt="Instagram" width="24" height="24"></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/twitter.png" alt="Twitter"
+                            width="24" height="24"></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
 
     <!--Lien javascript boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

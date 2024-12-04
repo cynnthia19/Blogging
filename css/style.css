@@ -5,10 +5,32 @@ body{
 
 /*index*/
 .banner{
-   background: url(/img/technology.jpg);
+   background: url(/img/technology.jpg) no-repeat center center/cover;
    height: 84.5vh;
+   display: flex;
+    align-items: center;
+    color: #fff; /* Tekst blan pou kontrast */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.banner .container {
+    max-width: 1200px; /* Limite gwosè kontenè a */
+    padding: 0 2rem; /* Kote ekri pa kole nan kwen */
 }
 
+.text-block {
+    max-width: 600px; /* Limite lwaye tèks yo */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
 /*navbar*/
 .navbar {
     background-color: #ffffff; 
@@ -16,9 +38,33 @@ body{
     padding-top: 20px;
     position: relative;
 }
+/*
 .btn-navbar .btn-primary {
     background-color: rgb(4, 107, 150);
     border-color: rgb(4, 107, 150);
+}*/
+.navbar-nav .btn-primary {
+    background-color: rgb(4, 107, 150);
+    border-color: rgb(4, 107, 150);
+    padding: 5px 15px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%; 
+}
+
+.navbar-nav .btn-primary:hover {
+    background-color: rgb(49, 150, 204);
+    border-color: rgb(49, 150, 204);
+}
+
+/* Ajuste le bouton dans les petits écrans */
+@media (max-width: 768px) {
+    .navbar-nav .btn-primary {
+        width: auto;
+        margin-top: 10px; 
+        justify-content: center;
+    }
 }
 /*
 .btn-navbar .btn-outline-primary {
@@ -64,21 +110,29 @@ body{
 }
 
 /* responsivite*/
-@media (max-width: 768px) {
+@media (max-width: 988px) {
     .navbar {
-        background-color: #ffffff; 
+        background-color: #ffffff;
+        justify-content: center; 
     }
-
-    .navbar-toggler {
-        border: none; 
+    .navbar-collapse {
+        text-align: center; 
     }
 
     .navbar-nav {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
         text-align: center; 
     }
 
     .navbar-nav .nav-item {
         padding: 10px 0; 
+    }
+
+    .navbar-toggler {
+        border: none; 
     }
 
     .navbar-nav .nav-link {
@@ -94,6 +148,51 @@ body{
         width: 100%; 
         margin-top: 10px;
     }
+}
+/*apwopo-index*/
+.apwopo {
+    background: #f8f9fa; /* Limyè gri pou background */
+    padding: 4rem 2rem; /* Espas entèn */
+    color: #333; /* Koulè tèks */
+}
+
+.apwopo .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #4c1d95; /* Koulè prensipal */
+}
+
+.apwopo .sub-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.apwopo .sub-title i {
+    margin-right: 0.5rem; /* Espas ant ikon ak tèks */
+}
+
+.apwopo p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.apwopo .mission, .apwopo .vision {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efè lonbraj */
+    transition: transform 0.3s ease-in-out;
+}
+
+.apwopo .mission:hover, .apwopo .vision:hover {
+    transform: translateY(-10px); /* Efè lè w pase souri */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /*kategori*/
@@ -191,37 +290,73 @@ a{
 }
 /* Section formulaire */
 .formulaire {
-    background-color: #f9f9f9; 
-    padding: 2rem 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 4rem 2rem;  /* Ogmante espas pou yon pi bon layout */
+
 }
 
 .formulaire h2 {
-    color: rgb(4, 107, 150);
+    color: rgb(4, 107, 150);  /* Gade pwofondè */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;  /* Ogmante gwosè font pou plis enfaz */
+    margin-bottom: 1.5rem;  /* Espas anba tit la */
+    text-align: center;  /* Alinye tit la nan sant */
 }
 
 .form-control {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #ffffff;  /* Fòm yo vin pi klè */
+    border: 1px solid #ddd;  /* Fòm yo gen yon limyè ak modèn */
+    border-radius: 8px;  /* Ajoute kwen awondi pou plis douceur */
+    padding: 1rem;  /* Ogmante espas entèn */
+    font-size: 1rem;  /* Ajiste gwosè font pou pi bon lekti */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .form-control:focus {
-    border-color: rgb(4, 107, 150);
-    box-shadow: 0 0 6px rgba(4, 107, 150, 0.3);
+    border-color: #0277bd;  /* Koulè bèl lè focus */
+    box-shadow: 0 0 8px rgba(2, 119, 189, 0.5);  /* Efè lonbraj ki pi fò */
+    transform: scale(1.02);  /* Ti ogmantasyon lè fòm nan ap fè focus */
 }
 
 .btn-primary {
-    background-color: rgb(4, 107, 150);
+    background-color: #0277bd;  /* Koulè ble plis vivan */
     border: none;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 6px;  /* Kwen awondi */
+    color: white;
+    padding: 0.8rem 1.5rem;  /* Espas pi bon sou bouton */
+    font-size: 1.1rem;  /* Gwosè font bouton */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: rgb(3, 90, 130);
-    box-shadow: 0 4px 6px rgba(4, 107, 150, 0.3);
+    background-color: #01579b;  /* Koulè bouton nan chanje lè hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Lonbraj bouton plis fò */
+    transform: translateY(-3px);  /* Efè bouton leve sou hover */
 }
+
+.btn-primary:active {
+    background-color: #01497c;  /* Koulè bouton nan lè yo klike sou li */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Efè lonbraj fèb lè klike */
+    transform: translateY(0);  /* Retounen bouton nan plas li */
+}
+
+.col-md-6 {
+    padding: 1rem;  /* Ogmante espas nan kolòn yo */
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;  /* Font diferan pou textarea */
+    font-size: 1rem;  /* Gwosè font ki pi bon */
+    resize: vertical;  /* Pèmèt itilizatè a ogmante oswa diminye gwosè textarea */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #0277bd;
+    box-shadow: 0 0 8px rgba(2, 119, 189, 0.5);
+    transform: scale(1.02);
+}
+
 
 /*konekte*/
 .modal-body .form-control {

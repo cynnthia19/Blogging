@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog teknoloji</title>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <!--Lien css boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Lien css-->
-        <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -21,7 +26,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link fw-bold" href="#">Akèy</a>
@@ -44,11 +49,14 @@
                     <li class="nav-item">
                         <a class="nav-link  fw-bold" href="kontakte.html">Kontakte</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Konekte</button>
+
+                    </li>
                 </ul>
             </div>
-            <div class="btn-navbar justify-content-end">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" > Konekte</button>
-            </div>
+
         </div>
     </nav>
 
@@ -77,7 +85,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <p class="m-0">Ou pa gen kont? 
+                    <p class="m-0">Ou pa gen kont?
                         <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">
                             Enskri
                         </a>
@@ -86,7 +94,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -110,7 +118,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="signup-password" class="form-label">Modpas</label>
-                            <input type="password" class="form-control" id="signup-password" placeholder="Antre modpas ou">
+                            <input type="password" class="form-control" id="signup-password"
+                                placeholder="Antre modpas ou">
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Enskri</button>
@@ -118,13 +127,13 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <p class="m-0">Ou deja gen yon kont? 
+                    <p class="m-0">Ou deja gen yon kont?
                         <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
                             Konekte
                         </a>
                     </p>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -132,93 +141,123 @@
 
     <!--banner-->
     <section class="banner">
-        <div class="container py-3 justify-content-center align-item-center">
-            <div class="row">
-                <div class="col-md-8">
-                    <h4>Byenveni sou Blog Teknoloji a </h4>
-                    <p>Blog sa a dedye pou tout pwofesyonèl, etidyan, ak pasyone ki vle rete enfòme sou dènye inovasyon nan teknoloji. Nou pataje konsèy itil, gid pratik, ak nouvèl teknolojik nan lang ou renmen — kreyòl la!</p>
-                </div>
-               
+        <div class="container">
+            <div class="text-block">
+                <h1 class="title">Byenveni sou Blog Teknoloji a</h1>
+                <p class="description">
+                    Blog sa a dedye pou tout pwofesyonèl, etidyan, ak pasyone ki vle rete enfòme sou dènye inovasyon nan
+                    teknoloji. Nou pataje konsèy itil, gid pratik, ak nouvèl teknolojik nan lang ou renmen — kreyòl la!
+                </p>
             </div>
         </div>
     </section>
+
+
 
     <section class="apwopo">
         <div class="container">
+            <h3 class="section-title text-primary">A Pwopo de Nou</h3>
             <div class="row">
-                <h3>A Pwopo de Nou</h3>
                 <div class="col-md-6">
-                    <h4>Misyon Nou</h4>
-                    <p>                   
-                         Nou vle pataje konesans, fòme kominote, epi fè tout moun konprann ke teknoloji ka amelyore lavi nou chak jou. Nou travay pou fè l pi fasil pou w jwenn enfòmasyon sou inovasyon ki ka ede w grandi nan karyè w oswa pwojè w.
-                    </p>
+                    <div class="mission">
+                        <h4 class="sub-title text-primary"><i class="fas fa-bullseye"></i> Misyon Nou</h4>
+                        <p>
+                            Nou vle pataje konesans, fòme kominote, epi fè tout moun konprann ke teknoloji ka amelyore
+                            lavi
+                            nou chak jou. Nou travay pou fè l pi fasil pou w jwenn enfòmasyon sou inovasyon ki ka ede w
+                            grandi nan karyè w oswa pwojè w.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h4>Vizyon</h4>
-                    <p>
-                        Nou anvizaje yon espas kote tout moun, kèlkeswa eksperyans yo, ka jwenn sipò ak enspirasyon pou grandi nan domèn teknoloji a. Nou vle ede kominote kreyòl la devlope konpetans teknolojik ki enpòtan pou avni.
-                    </p>
+                    <div class="vision">
+                        <h4 class="sub-title text-primary"><i class="fas fa-lightbulb"></i> Vizyon</h4>
+                        <p>
+                            Nou anvizaje yon espas kote tout moun, kèlkeswa eksperyans yo, ka jwenn sipò ak enspirasyon
+                            pou
+                            grandi nan domèn teknoloji a. Nou vle ede kominote kreyòl la devlope konpetans teknolojik ki
+                            enpòtan pou avni.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="kategori">
-        <h4>Blog</h4>
-
+        <h4 class="text-center text-primary"><i class="fas fa-blog"></i> Blog</h4>
         <div class="container py-5">
             <div class="row justify-content-between">
-                <!-- Card 1 -->
-                <div class="col-md-6 col-sm-12">
-                    <a href="nouvel.html">
+                <!-- Card 1: Nouvel Teknolojik -->
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <a href="nouvel.html" class="text-decoration-none">
                         <div class="card shadow-lg rounded">
-                            <img src="/img/corona-4938929_1920.jpg" class="card-img-top img-fluid" alt="Image">
+                            <img src="/img/corona-4938929_1920.jpg" class="card-img-top img-fluid"
+                                alt="Nouvel Teknolojik">
                             <div class="card-body">
-                                <h5 class="card-title text-dark">Nouvel teknolojik</h5>
-                                <p class="card-text"><p class="lead mb-4">
-                                    Paj sa a fèt pou kenbe w enfòme epi mete w ajou sou tout sa k ap pase nan teknoloji. 
-                                </p></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <a href="sekirite.html">
-                        <div class="card shadow-lg rounded">
-                            <img src="/img/castle-4512299_1280.jpg" class="card-img-top img-fluid" alt="Image">
-                            <div class="card-body">
-                                <h5 class="card-title text-dark">Sekirite Teknolojik</h5>
-                                <p class="card-text"><p class="lead mb-4">
-                                    Nou pataje konsèy, estrateji, ak resous pou asire sekirite done w yo, pandan w ap eksplore mond dijital la san risk.            </p>
-                                </p></p>
+                                <h5 class="card-title text-dark">
+                                    <i class="fas fa-newspaper text-primary"></i> Nouvel Teknolojik
+                                </h5>
+                                <p class="lead mb-0">
+                                    Paj sa a fèt pou kenbe w enfòme epi mete w ajou sou tout sa k ap pase nan teknoloji.
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
 
+                <!-- Card 2: Sekirite Teknolojik -->
                 <div class="col-md-6 col-sm-12">
-                    <a href="reviTek.html">
+                    <a href="sekirite.html" class="text-decoration-none">
                         <div class="card shadow-lg rounded">
-                            <img src="/img/room-8779510_1280.png" class="card-img-top img-fluid" alt="Image">
+                            <img src="/img/castle-4512299_1280.jpg" class="card-img-top img-fluid"
+                                alt="Sekirite Teknolojik">
                             <div class="card-body">
-                                <h5 class="card-title text-dark">Revi Teknik</h5>
-                                <p class="card-text"><p class="lead mb-4">
-                                    Nou revize dènye aparèy teknolojik yo pou ede w fè bon chwa selon bezwen ou yo.                                </p></p>
+                                <h5 class="card-title text-dark">
+                                    <i class="fas fa-lock text-primary"></i> Sekirite Teknolojik
+                                </h5>
+                                <p class="lead mb-0">
+                                    Nou pataje konsèy, estrateji, ak resous pou asire sekirite done w yo pandan w ap
+                                    eksplore mond dijital la san risk.
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
 
+                <!-- Card 3: Revi Teknik -->
                 <div class="col-md-6 col-sm-12">
-                    <a href="reviTek.html">
+                    <a href="#" class="text-decoration-none">
                         <div class="card shadow-lg rounded">
-                            <img src="/img/business-5475660_1280.jpg" class="card-img-top img-fluid" alt="Image">
+                            <img src="/img/room-8779510_1280.png" class="card-img-top img-fluid" alt="Revi Teknik">
                             <div class="card-body">
-                                <h5 class="card-title text-dark">Ekonomi dijital</h5>
-                                <p class="card-text"><p class="lead mb-4">
-                                    Ekonomi dijital la explore jan teknoloji ap chanje fason moun fè tranzaksyon ak jere resous yo.
-                                </p></p>    
-                                </div>
+                                <h5 class="card-title text-dark">
+                                    <i class="fas fa-tools text-primary"></i> Revi Teknik
+                                </h5>
+                                <p class="lead mb-0">
+                                    Nou revize dènye aparèy teknolojik yo pou ede w fè bon chwa selon bezwen ou yo.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 4: Ekonomi Dijital -->
+                <div class="col-md-6 col-sm-12 ">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card shadow-lg rounded">
+                            <img src="/img/business-5475660_1280.jpg" class="card-img-top img-fluid"
+                                alt="Ekonomi Dijital">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">
+                                    <i class="fas fa-chart-line text-primary"></i> Ekonomi Dijital
+                                </h5>
+                                <p class="lead mb-0">
+                                    Ekonomi dijital la explore jan teknoloji ap chanje fason moun fè tranzaksyon ak jere
+                                    resous yo.
+                                </p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -226,9 +265,75 @@
         </div>
     </section>
 
-    <!--Lien javascript boostrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <!-- Menu -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="text-primary">Menu</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Akey</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kategori</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">A pwopo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kontakte</a></li>
+                    </ul>
+                </div>
 
-    
+                <!-- Kategori -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="text-primary">Kategori</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Nouvel
+                                teknolojik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sekirite
+                                teknolojik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Revi Tek</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ekonomi
+                                Dijital</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Form & Kontakte -->
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5 class="text-primary">Abòne pou bilten nou an</h5>
+                        <p>Resi mensyèl sou sa ki nouvo ak enteresan nan teknoloji.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Adrès imèl" required>
+                            <button class="btn btn-primary" type="submit">Abòne</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-4">
+                        <h4 class="text-primary">Kontakte nou</h4>
+                        <a href="mailto:dijitek@gmail.com" class="text-body-secondary">dijitek@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p class="text-body-secondary">Copyright &copy; 2024. Tout dwa rezève.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/facebook.png" alt="Facebook"
+                                width="24" height="24"></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/instagram.png"
+                                alt="Instagram" width="24" height="24"></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="/img/twitter.png" alt="Twitter"
+                                width="24" height="24"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--Lien javascript boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
